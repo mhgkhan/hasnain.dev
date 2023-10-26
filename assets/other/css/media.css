@@ -1,0 +1,126 @@
+@media screen and (max-width: 1030px) {
+  html {
+    background: red;
+  }
+  main {
+    padding: 25px;
+  }
+  .home>h1{
+    margin-top: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .website {
+    flex-direction: column;
+  }
+  aside {
+    width: 100% !important;
+    min-height: auto !important;
+    position: static !important;
+  }
+  .openInfo{
+    display: flex !important;
+  }
+  aside nav {
+    margin-top: 0px !important;
+  }
+  aside nav .line{
+      width: 99% !important;
+  }
+
+  aside nav {
+    height: 0px;
+    overflow-y: hidden;
+  }
+  aside header {
+    display: flex !important;
+    align-items: end;
+    justify-content: start !important;
+  }
+  aside header img {
+    margin: 0px 0px;
+    width: 100px;
+    height: 110px;
+  }
+  
+  aside header article {
+    width: auto !important;
+    margin: 0px 0px;
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+  }
+  .main {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .home>h1{
+    margin-top: 0px !important;
+  }
+  .main .menu {
+    padding: 7px 3px;
+    width: 100%;
+    position: fixed;
+    top: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 9999;
+  }
+  .main .menu button{
+  border-right: 1px solid #1c1c34 !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    background: blue;
+    font-size: 95%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  aside header img {
+    width: 80px;
+    height: 90px;
+  }
+  aside nav .line{
+    padding: 1px 2px;
+  }
+  aside nav .line .icn{
+    width: auto !important;
+    height: auto !important;
+  }
+  aside nav .line .icn span{
+    font-size: 1rem !important;
+  }
+  aside nav .line .text span{
+    font-size: .7rem;
+  }
+  aside nav .line .text p{
+    font-size: .8rem;
+  }
+  .team-block{
+    margin-top: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    background: green;
+  }
+  main{
+    padding: 10px;
+  }
+  .main{
+    padding: 12px !important;
+  }
+  .main .menu{
+    top: 90vh;
+  }
+  .main .menu button{
+    height: 40px;
+    font-size: 1rem;
+  }
+}

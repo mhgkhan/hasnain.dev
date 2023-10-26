@@ -1,0 +1,139 @@
+/* display flex classes  */
+.flex-only {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-item-center {
+  align-items: center;
+}
+.flex-justify-center {
+  justify-content: center;
+}
+.flex-wr-wr{
+  flex-wrap: wrap;
+}
+
+.flex-item-start {
+  align-items: start;
+}
+.flex-justify-start {
+  justify-content: start;
+}
+
+.flex-justify-end {
+  justify-content: end;
+}
+.flex-item-end {
+  align-items: end;
+}
+.full-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-justify-spaceb{
+    justify-content: space-between;
+}
+.flex-justify-ar{
+  justify-content: space-around;
+}
+
+
+/* text styling */
+.t-center {
+  text-align: center;
+}
+.t-left {
+  text-align: left;
+}
+.t-right {
+  text-align: right;
+}
+
+/* text weight  */
+.bold{
+    font-weight: bold;
+}
+.bolder{
+    font-weight: bolder;
+}
+.normal{
+    font-weight: 500;
+}
+
+
+/* margin and padding  */
+.m-auto{
+    margin: auto;
+}
+.mx-auto{
+    margin: 0px auto;
+}
+.mt-1{
+    margin-top: 1rem;
+}
+.mt-2{
+    margin-top: 2rem;
+}
+
+
+/* padding */
+.d-padd{
+    padding:7px;
+}
+
+.py-5{
+    padding: 5px 0px;
+}
+.px-5{
+    padding: 0px 5px;
+}
+
+
+
+/* width  */
+.w-full{
+    width: 100%;
+}
+.w-70{
+    width: 70%;
+}
+.w-23{
+    width: 23%;
+}
+.w-65{
+    width: 65%;
+}
+.w-auto{
+    width: auto;
+}
+
+
+/* border */
+/* default border  */
+.db{
+    border: 1px solid white;
+    /* height: 60vh; */
+}
+
+/* defualt bg for section  */
+.def-bg{
+    background: #1c1c34;
+    box-shadow: 2px 1px 12px 6px #030a11;
+    border-radius: 8px;
+}
+
+.container{
+    width: 90%;
+    margin: 0px auto;
+}
+
+
+
+/* display clases */
+.hide{
+  display: none;
+}
