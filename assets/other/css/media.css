@@ -55,9 +55,6 @@
     width: 100%;
     margin-top: 1rem;
   }
-  .home>h1{
-    margin-top: 0px !important;
-  }
   .main .menu {
     padding: 7px 3px;
     width: 100%;
@@ -70,6 +67,9 @@
   }
   .main .menu button{
   border-right: 1px solid #1c1c34 !important;
+  }
+  footer{
+    margin-bottom: 3rem;
   }
 }
 
@@ -103,6 +103,15 @@
   }
   .team-block{
     margin-top: 1rem !important;
+  }
+  .languages{
+    padding: 20px 7px !important;
+  }
+  .languages .lang-container{
+    width: 95% !important;
+  }
+  .portfolio-buttons button{
+    padding: 4px 9px;
   }
 }
 

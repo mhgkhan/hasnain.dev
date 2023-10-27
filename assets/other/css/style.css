@@ -36,6 +36,11 @@ h6 {
   font-family: "Sedgwick Ave Display", cursive !important;
 }
 
+/* :root{
+  --bgSection: #010101;
+} */
+
+
 main{
   max-height: 100vh !important;
   overflow-x: auto !important;
@@ -155,7 +160,7 @@ aside .social-icons span {
   background: #010e1a;
   /* border: 1px solid white; */
 }
-.main .menu button {
+.main .menu button, .portfolio-buttons button {
   background: #010e1a;
   width: 100px;
   height: 50px;
@@ -167,7 +172,7 @@ aside .social-icons span {
   cursor: pointer;
   transition: 0.4s;
 }
-.main .menu button:hover {
+.main .menu button:hover,.portfolio-buttons button:hover {
   transform: scale(1.1);
   background: #091724bd;
 } 
@@ -273,7 +278,147 @@ aside .social-icons span {
   color: yellow;
 }
 
-footer p {
+
+.cv-container{
+  border-left: 3px solid white;
+  padding: 20px !important;
+}
+.education-cv{
+  margin: 2rem 0px !important;
+  width: 100%;
+  padding: 0px 12px !important;
+  border-left: 1px solid yellow;
+  /* border-radius: 20px; */
+  position: relative;
+}
+.education-cv::before{
+  content: "";
+  border: 1px solid white;
+  background: white;
+  border-radius: 50px;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: -8px;
+  top: -6px;
+}
+
+.education-cv h3{
+  margin: 1rem 0px;
+}
+
+.education-cv .cv-inner-block{
+  margin: .6rem 0px;
+}
+.education-cv h4{
+  color: yellow;
+  margin-left: 6px;
+}
+.education-cv p{
+  margin-left: 20px;
+  text-transform:capitalize;
+}
+.education-cv p span{
+  font-weight: bolder;
+  margin: 0px 12px;
+
+}
+
+.languages{
+padding: 10px 30px;
+}
+
+.languages .lang-container{
+  width: 80%;
+  margin: 1rem 0px;
+}
+.lang{
+  margin: .9rem 0px;
+}
+
+.lang-container .lang span{
+  color: #c4c3c3 !important;
+  padding: 0px 5px;
+  font-size: .8rem;
+}
+.lang-container .lang .bar{
+  width: 100%;
+  height: 15px;
+  border: 1px solid yellow;
+  margin-top: 6px;
+  border-radius: 30px;
+}
+.lang-container .lang .bar .fill{
+  width: 88%;
+  height: 100%;
+  border-radius: 30px;
+  background: yellow;
+}
+
+
+
+.portfolio-buttons button{
+  width: auto;
   padding: 7px 12px;
+  border-radius: 5px;
+  margin: 4px 2px;
+}
+
+.portfolio-buttons button:active{
+  transform: scale(.8);
+}
+
+.project{
+  width: 220px;
+  height: 200px;
+  border: 1px solid #494242;
+  border-radius: 8px;
+  margin: .7rem;
+  transition: .6s ;
+  position: relative;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: 0px 1px 9px 4px #010e1a;
+}
+
+
+.project:hover{
+  transform: scale(1.03);
+}
+
+
+.project .header{
+  height: 73%;
+  /* border: 1px solid white; */
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .6s;
+}
+
+.project .header img{
+  height: 100%;
+  padding: 4px;
+  border-radius: 9px 9px 0px 0px;
+}
+
+.project .header .openInfo{
+  transition: .4s;
+  width: 99%;
+  height: 99%;
+  background: #50501dd5;
+  position: absolute;
+  top: 0;
+  padding: 0px 15px;
+  transform: translateY(-150px);
+  transition: .6s;
+}
+
+
+
+footer p {
+  padding:12px;
   font-size: 1.1rem;
+  font-weight: 300;
+
 }

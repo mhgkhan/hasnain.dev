@@ -92,3 +92,26 @@ previus.addEventListener("click", e => {
         testmonial[counter + 1].style.display = "none"
     }
 })
+
+
+
+const projectHeader = document.querySelectorAll(".project .header");
+
+projectHeader.forEach((header,index)=>{
+    const projectContent = header.querySelector(".openInfo")
+    header.addEventListener("mouseenter", ()=>{
+        console.log("mouse is enter")
+        projectContent.setAttribute("style","transform:translateY(0px)")
+        // projectHeader.querySelector("img").style.scale = "1.7"
+    })
+})
+
+projectHeader.forEach((header,index)=>{
+    const projectContent = header.querySelector(".openInfo")
+    header.addEventListener("mouseleave", ()=>{
+        console.log("mouse is leave")
+        projectContent.setAttribute("style","transform:translateY(-150px)")
+        // projectHeader.querySelector("img").style.scale = "1"
+    })
+})
+
