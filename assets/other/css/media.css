@@ -1,7 +1,4 @@
 @media screen and (max-width: 1030px) {
-  html {
-    background: red;
-  }
   main {
     padding: 25px;
   }
@@ -75,7 +72,6 @@
 
 @media screen and (max-width: 700px) {
   html {
-    background: blue;
     font-size: 95%;
   }
 }
@@ -116,9 +112,6 @@
 }
 
 @media screen and (max-width: 400px) {
-  html {
-    background: green;
-  }
   main{
     padding: 10px;
   }

@@ -115,3 +115,66 @@ projectHeader.forEach((header,index)=>{
     })
 })
 
+
+
+
+const buttons = document.querySelectorAll(".portfolio-button");
+const project = document.querySelectorAll(".project");
+const projectContaienr = document.querySelector(".projects")
+
+const showProjects = (div) =>{
+    console.log("button are working...")
+    const id = div.id 
+    project.forEach(projec=>{
+        if(id == "all"){
+            projec.classList.remove("hide")
+        }
+        else if(projec.getAttribute("data-field") == id){
+            projec.classList.remove("hide")
+        }
+        else{
+            projec.classList.add("hide")
+        }
+    })
+}
+
+
+
+
+const formBlock = document.querySelectorAll(".form-block")
+
+
+const fieldsetSetting = (div) =>{
+    const id = div.id
+    if(id == "name"){
+        formBlock[0].querySelector("legend").classList.remove("hide")
+        formBlock[1].querySelector("legend").classList.add("hide")
+        formBlock[2].querySelector("legend").classList.add("hide")
+    }
+    else if (id=="email"){
+        formBlock[1].querySelector("legend").classList.remove("hide")
+        formBlock[0].querySelector("legend").classList.add("hide")
+        formBlock[2].querySelector("legend").classList.add("hide")
+    }
+    else if (id=="message"){
+        formBlock[0].querySelector("legend").classList.add("hide")
+        formBlock[1].querySelector("legend").classList.add("hide")
+        formBlock[2].querySelector("legend").classList.remove("hide")
+    }
+    div.onmouseleave = function(d){
+        div.querySelector("legend").classList.add("hide")
+    }
+} 
+
+
+
+document.getElementById("form-contact").addEventListener("submit", e=>{
+    e.preventDefault();
+    document.getElementById("msg").innerText = "Loading"
+    setTimeout(() => {
+        document.getElementById("msg").innerText = "Your message has been sent sucessfully..."
+    }, 1500);
+    setTimeout(() => {
+        document.getElementById("msg").innerText = ""
+    }, 3000);
+})

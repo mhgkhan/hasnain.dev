@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  background: #010e1a;  
+  background: #010e1a;
   overflow: hidden !important;
 }
 
@@ -40,9 +40,10 @@ h6 {
   --bgSection: #010101;
 } */
 
-
-main{
+main {
   max-height: 100vh !important;
+  max-width: 1500px !important;
+  margin: 0px auto;
   overflow-x: auto !important;
   padding: 60px;
 }
@@ -53,7 +54,17 @@ aside {
   transition: 0.7s;
   position: sticky;
   top: 0px;
+  animation: asid 3s ease-in-out alternate-reverse;
 }
+@keyframes asid {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
+
 aside header img {
   width: 150px;
   height: 170px;
@@ -92,9 +103,10 @@ aside header .openInfo {
   display: none;
   overflow: hidden;
   cursor: pointer;
+  background: linear-gradient(320deg, #8a8a2ed5, #8a8a2ed5, orange);
 }
 aside header .openInfo:hover {
-  background: linear-gradient(310deg, orangered, orange);
+  background: linear-gradient(320deg, #e6e653d5, #c4c441d5, orange);
 }
 
 aside nav .line {
@@ -149,6 +161,15 @@ aside .social-icons span {
 .main {
   padding: 30px !important ;
   position: relative;
+  animation: mai 1 s ease alternate-reverse;
+}
+@keyframes mai {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
 }
 
 .main .menu {
@@ -160,7 +181,8 @@ aside .social-icons span {
   background: #010e1a;
   /* border: 1px solid white; */
 }
-.main .menu button, .portfolio-buttons button {
+.main .menu button,
+.portfolio-buttons button {
   background: #010e1a;
   width: 100px;
   height: 50px;
@@ -172,10 +194,11 @@ aside .social-icons span {
   cursor: pointer;
   transition: 0.4s;
 }
-.main .menu button:hover,.portfolio-buttons button:hover {
+.main .menu button:hover,
+.portfolio-buttons button:hover {
   transform: scale(1.1);
   background: #091724bd;
-} 
+}
 
 .main p {
   margin-top: 8px;
@@ -193,7 +216,9 @@ aside .social-icons span {
   margin: 0.7rem 7px;
   transition: 0.4s;
   cursor: pointer;
+  animation: car 3s ease-out alternate-reverse;
 }
+
 .card:hover {
   transform: scale(1.03);
 }
@@ -278,12 +303,11 @@ aside .social-icons span {
   color: yellow;
 }
 
-
-.cv-container{
+.cv-container {
   border-left: 3px solid white;
   padding: 20px !important;
 }
-.education-cv{
+.education-cv {
   margin: 2rem 0px !important;
   width: 100%;
   padding: 0px 12px !important;
@@ -291,7 +315,7 @@ aside .social-icons span {
   /* border-radius: 20px; */
   position: relative;
 }
-.education-cv::before{
+.education-cv::before {
   content: "";
   border: 1px solid white;
   background: white;
@@ -303,107 +327,115 @@ aside .social-icons span {
   top: -6px;
 }
 
-.education-cv h3{
+.education-cv h3 {
   margin: 1rem 0px;
 }
 
-.education-cv .cv-inner-block{
-  margin: .6rem 0px;
+.education-cv .cv-inner-block {
+  margin: 0.6rem 0px;
 }
-.education-cv h4{
+.education-cv h4 {
   color: yellow;
   margin-left: 6px;
 }
-.education-cv p{
+.education-cv p {
   margin-left: 20px;
-  text-transform:capitalize;
+  text-transform: capitalize;
 }
-.education-cv p span{
+.education-cv p span {
   font-weight: bolder;
   margin: 0px 12px;
-
 }
 
-.languages{
-padding: 10px 30px;
+.languages {
+  padding: 10px 30px;
 }
 
-.languages .lang-container{
+.languages .lang-container {
   width: 80%;
   margin: 1rem 0px;
 }
-.lang{
-  margin: .9rem 0px;
+.lang {
+  margin: 0.9rem 0px;
 }
 
-.lang-container .lang span{
+.lang-container .lang span {
   color: #c4c3c3 !important;
   padding: 0px 5px;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
-.lang-container .lang .bar{
+.lang-container .lang .bar {
   width: 100%;
   height: 15px;
   border: 1px solid yellow;
   margin-top: 6px;
   border-radius: 30px;
 }
-.lang-container .lang .bar .fill{
+.lang-container .lang .bar .fill {
   width: 88%;
   height: 100%;
   border-radius: 30px;
   background: yellow;
 }
 
-
-
-.portfolio-buttons button{
+.portfolio-buttons button {
   width: auto;
   padding: 7px 12px;
   border-radius: 5px;
   margin: 4px 2px;
+  border: 1px solid #585817;
 }
 
-.portfolio-buttons button:active{
-  transform: scale(.8);
+.portfolio-buttons button:active {
+  transform: scale(0.8);
 }
 
-.project{
+.project {
   width: 220px;
-  height: 200px;
+  min-height: 200px;
+  max-height: auto;
   border: 1px solid #494242;
   border-radius: 8px;
-  margin: .7rem;
-  transition: .6s ;
+  margin: 0.7rem;
+  transition: 0.6s;
   position: relative;
   justify-content: space-between;
   flex-direction: column;
   box-shadow: 0px 1px 9px 4px #010e1a;
+  animation: proj 0.8s ease-in alternate-reverse;
+}
+@keyframes proj {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.6);
+    opacity: 0.6;
+  }
 }
 
-
-.project:hover{
+.project:hover {
   transform: scale(1.03);
 }
 
-
-.project .header{
+.project .header {
   height: 73%;
   /* border: 1px solid white; */
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  transition: .6s;
+  transition: 0.6s;
 }
 
-.project .header img{
+.project .header img {
   height: 100%;
   padding: 4px;
   border-radius: 9px 9px 0px 0px;
 }
 
-.project .header .openInfo{
-  transition: .4s;
+.project .header .openInfo {
+  transition: 0.4s;
   width: 99%;
   height: 99%;
   background: #50501dd5;
@@ -411,14 +443,87 @@ padding: 10px 30px;
   top: 0;
   padding: 0px 15px;
   transform: translateY(-150px);
-  transition: .6s;
+  transition: 0.6s;
 }
 
+.contact form {
+  width: 98%;
+  margin: 2rem auto;
+  display: block;
+}
 
+.contact form fieldset {
+  margin: 0.7rem auto;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #83832fd5;
+}
+.contact form fieldset:hover {
+  box-shadow: 0px 0px 34px #494242;
+}
+
+.contact form fieldset legend {
+  margin: 0px 6px;
+  padding: 3px 5px;
+  text-transform: capitalize;
+  animation: leg 0.8s ease-in alternate-reverse;
+  color: #ccc6c6f1;
+  font-size: 0.8rem;
+}
+
+@keyframes leg {
+  from {
+    margin-bottom: 0px;
+  }
+  to {
+    margin-bottom: -11px;
+  }
+}
+
+.contact form fieldset input,
+.contact form fieldset textarea {
+  width: 100%;
+  padding: 9px 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: none;
+}
+.contact form button[type="submit"] {
+  width: 90px;
+  height: 50px;
+  padding: 8px 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: #091724bd;
+  border: 1px solid #494242;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 7px 9px;
+  box-shadow: 0px 0px 20px #494242;
+  transition: 0.7s;
+}
+.contact form button:hover {
+  box-shadow: 0px 0px 34px #6d6c4d;
+  background: linear-gradient(330deg, #ffff00d5, orange, orange, orange);
+  animation: btn 3s alternate-reverse;
+}
+@keyframes btn {
+  from {
+    background: linear-gradient(300deg, orange, orange, orange, #ffff00d5);
+  }
+  to {
+    background: linear-gradient(330deg, orange, #ffff00d5, orange, orange);
+  }
+}
+
+.contact form button:active {
+  transform: scale(0.7);
+}
 
 footer p {
-  padding:12px;
+  padding: 12px;
   font-size: 1.1rem;
   font-weight: 300;
-
 }
