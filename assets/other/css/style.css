@@ -34,6 +34,8 @@ h4,
 h5,
 h6 {
   font-family: "Sedgwick Ave Display", cursive !important;
+font-family: "Barlow", sans-serif;
+font-weight: bolder;
 }
 
 /* :root{
@@ -155,7 +157,8 @@ aside .social-icons {
 aside .social-icons span {
   font-size: 1.5rem;
   margin: 0px auto;
-  display: block;
+  display: block;;
+  color: #19ff00 !important;
 }
 
 .main {
@@ -228,7 +231,7 @@ aside .social-icons span {
   margin: 0.5rem auto;
 }
 .card h3 {
-  color: yellow;
+  color: #19ff00;
 }
 .card p {
   text-align: center;
@@ -269,7 +272,7 @@ aside .social-icons span {
 }
 
 .testmonial span {
-  color: orange;
+  color: #19ff00;
   text-transform: uppercase;
   font-weight: bold;
   margin: 4px;
@@ -298,9 +301,11 @@ aside .social-icons span {
 }
 .team-block img {
   border-radius: 120px;
+  width: 80px;
+  height: 80px;
 }
 .team-block h3 {
-  color: yellow;
+  color: #19ff00;
 }
 
 .cv-container {
@@ -315,16 +320,23 @@ aside .social-icons span {
   /* border-radius: 20px; */
   position: relative;
 }
-.education-cv::before {
+.education-cv::before,
+.education-cv::after {
   content: "";
-  border: 1px solid white;
-  background: white;
+  border: 5px solid white;
+  /* background: white; */
   border-radius: 50px;
   position: absolute;
   width: 15px;
   height: 15px;
   left: -8px;
   top: -6px;
+}
+
+.education-cv::after {
+  top: 95%;
+  border: 5px solid wheat;
+  bottom: -6px !important;
 }
 
 .education-cv h3 {
@@ -335,7 +347,7 @@ aside .social-icons span {
   margin: 0.6rem 0px;
 }
 .education-cv h4 {
-  color: yellow;
+  color: #19ff00;
   margin-left: 6px;
 }
 .education-cv p {
@@ -442,8 +454,16 @@ aside .social-icons span {
   position: absolute;
   top: 0;
   padding: 0px 15px;
-  transform: translateY(-150px);
+  transform: translateY(-300px);
   transition: 0.6s;
+}
+
+.map-contact {
+  height: 300px;
+}
+
+.map-contact iframe {
+  border-radius: 8px !important;
 }
 
 .contact form {

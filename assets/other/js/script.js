@@ -97,7 +97,7 @@ previus.addEventListener("click", e => {
 
 const projectHeader = document.querySelectorAll(".project .header");
 
-projectHeader.forEach((header,index)=>{
+projectHeader.forEach((header)=>{
     const projectContent = header.querySelector(".openInfo")
     header.addEventListener("mouseenter", ()=>{
         console.log("mouse is enter")
@@ -106,11 +106,11 @@ projectHeader.forEach((header,index)=>{
     })
 })
 
-projectHeader.forEach((header,index)=>{
+projectHeader.forEach((header)=>{
     const projectContent = header.querySelector(".openInfo")
     header.addEventListener("mouseleave", ()=>{
         console.log("mouse is leave")
-        projectContent.setAttribute("style","transform:translateY(-150px)")
+        projectContent.setAttribute("style","transform:translateY(-300px)")
         // projectHeader.querySelector("img").style.scale = "1"
     })
 })
