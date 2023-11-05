@@ -33,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Sedgwick Ave Display", cursive !important;
+  /* font-family: "Sedgwick Ave Display", cursive !important; */
 font-family: "Barlow", sans-serif;
 font-weight: bolder;
 }
@@ -211,7 +211,7 @@ aside .social-icons span {
 
 .card {
   width: 230px;
-  height: 230px;
+  height: 300px;
   border: 1px solid gray;
   padding: 10px;
   border-radius: 8px;
@@ -293,6 +293,12 @@ aside .social-icons span {
 .btn-rl span {
   font-size: 1.5rem;
 }
+
+.team-block{
+  margin: .5rem auto;
+  width: 290px;
+}
+
 
 .team-block span {
   font-weight: bolder;
