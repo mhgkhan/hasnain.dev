@@ -463,6 +463,9 @@ aside .social-icons span {
   transform: translateY(-300px);
   transition: 0.6s;
 }
+.project h2{
+  text-transform: capitalize !important;
+}
 
 .map-contact {
   height: 300px;
